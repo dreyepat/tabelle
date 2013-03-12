@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nr:</b>
+  <%= @spielerliste.nr %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @spielerliste.name %>
+</p>
+
+<p>
+  <b>Vorname:</b>
+  <%= @spielerliste.vorname %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @spielerliste.position %>
+</p>
+
+<p>
+  <b>Geburtsdatum:</b>
+  <%= @spielerliste.geburtsdatum %>
+</p>
+
+
+<%= link_to 'Edit', edit_spielerliste_path(@spielerliste) %> |
+<%= link_to 'Back', spielerlistes_path %>

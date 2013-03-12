@@ -1,0 +1,31 @@
+<h1>Listing spielerlistes</h1>
+
+<table>
+  <tr>
+    <th>Nr</th>
+    <th>Name</th>
+    <th>Vorname</th>
+    <th>Position</th>
+    <th>Geburtsdatum</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spielerlistes.each do |spielerliste| %>
+  <tr>
+    <td><%= spielerliste.nr %></td>
+    <td><%= spielerliste.name %></td>
+    <td><%= spielerliste.vorname %></td>
+    <td><%= spielerliste.position %></td>
+    <td><%= spielerliste.geburtsdatum %></td>
+    <td><%= link_to 'Show', spielerliste %></td>
+    <td><%= link_to 'Edit', edit_spielerliste_path(spielerliste) %></td>
+    <td><%= link_to 'Destroy', spielerliste, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spielerliste', new_spielerliste_path %>

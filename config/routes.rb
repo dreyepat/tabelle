@@ -1,4 +1,6 @@
 Tabelle::Application.routes.draw do
+  resources :spielerlistes
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
